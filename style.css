@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+body{
+  background-color: #E3E3E3;
+  text-align: center;
+}
+
+h1{
+  font-family: 'Courier New', Courier, monospace;
+  display: inline-block;
+  box-shadow: 1px 1px 10px 8px  rgba(255, 255, 255, 0.76);
+  padding: 1px 15px 1px 15px;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+.square{
+  width: 100px;
+  height: 100px;
+  background-color: #4E4E4D;
+  display: inline-block;
+}
+
+.sqr0, .sqr1, .sqr2, .sqr3, .sqr4, .sqr5{
+  border-bottom: 5px solid #E3E3E3;
+}
+
+.sqr0, .sqr1, .sqr3, .sqr4, .sqr6, .sqr7{
+  border-right: 5px solid #E3E3E3;
+}
+
+.sqr1, .sqr2, .sqr4, .sqr5, .sqr7, .sqr8{
+  border-left: 5px solid #E3E3E3;
+}
+
+.sqr3, .sqr4, .sqr5, .sqr6, .sqr7, .sqr8{
+  border-top: 5px solid #E3E3E3;
+}
+
+#btn{
+  margin: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  border: none;
+  box-shadow: 3px 2px 5px #4e4e4db0;
+}
+
+.o{
+  position: relative;
+}
+
+.o:after{
+  position: absolute;
+  content: "O";
+  color: white;
+  font-size: 50px;
+  font-family: "Raleway", Geneva, Tahoma, sans-serif;
+  line-height: 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.x{
+  position: relative;
+}
+
+.x:after{
+  position: absolute;
+  content: "X";
+  color: white;
+  font-size: 50px;
+  font-family: "Raleway", Geneva, Tahoma, sans-serif;
+  line-height: 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
