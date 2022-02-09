@@ -20,22 +20,7 @@ h1{
   height: 100px;
   background-color: #4E4E4D;
   display: inline-block;
-}
-
-.sqr0, .sqr1, .sqr2, .sqr3, .sqr4, .sqr5{
-  border-bottom: 5px solid #E3E3E3;
-}
-
-.sqr0, .sqr1, .sqr3, .sqr4, .sqr6, .sqr7{
-  border-right: 5px solid #E3E3E3;
-}
-
-.sqr1, .sqr2, .sqr4, .sqr5, .sqr7, .sqr8{
-  border-left: 5px solid #E3E3E3;
-}
-
-.sqr3, .sqr4, .sqr5, .sqr6, .sqr7, .sqr8{
-  border-top: 5px solid #E3E3E3;
+  margin: 1px;
 }
 
 #btn{
