@@ -1,33 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
+*::selection{
+  background: none;
+}
+
+:root{
+  --primary-color: #E3E3E3;
+  --secondary-color: #4E4E4D;
+}
+
+.dark-theme{
+  --primary-color: #4E4E4D;
+  --secondary-color: #E3E3E3;
+}
+
 body{
-  background-color: #E3E3E3;
+  background-color: var(--primary-color);
   text-align: center;
 }
 
 h1{
   font-family: 'Courier New', Courier, monospace;
   display: inline-block;
-  box-shadow: 1px 1px 10px 8px  rgba(255, 255, 255, 0.76);
+  color: var(--secondary-color);
   padding: 1px 15px 1px 15px;
-  border-radius: 3px;
-  background-color: rgb(255, 255, 255);
   
 }
 
 .square{
   width: 100px;
   height: 100px;
-  background-color: #4E4E4D;
+  background-color: var(--secondary-color);
   display: inline-block;
   margin: 1px;
 }
 
-#btn{
+#restart{
   margin: 30px;
   font-family: 'Courier New', Courier, monospace;
   border: none;
-  box-shadow: 3px 2px 5px #4e4e4db0;
+  box-shadow: 3px 2px 5px #4E4E4D;
+  cursor: pointer;
 }
 
 .o{
@@ -37,7 +50,7 @@ h1{
 .o:after{
   position: absolute;
   content: "O";
-  color: white;
+  color: var(--primary-color);
   font-size: 50px;
   font-family: "Raleway", Geneva, Tahoma, sans-serif;
   line-height: 100px;
@@ -54,7 +67,7 @@ h1{
 .x:after{
   position: absolute;
   content: "X";
-  color: white;
+  color: var(--primary-color);
   font-size: 50px;
   font-family: "Raleway", Geneva, Tahoma, sans-serif;
   line-height: 100px;
