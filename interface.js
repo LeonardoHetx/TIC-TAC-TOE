@@ -19,8 +19,7 @@ function handleClick(event) {
   let position = square.id
 
   if (handleMove(position)) {
-    setTimeout(() => { alert(`Jogador ${playerTime} venceu com a sequência ${seq} !`) }, 10)
-
+    setTimeout(() => { alert(`Jogador ${playerTime} venceu com a sequência ${seq[0]}-${seq[1]}-${seq[2]} !`) }, 10)
   }
   updateSquare(position)
 }
