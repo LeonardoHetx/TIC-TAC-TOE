@@ -6,10 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 })
 
-var darkMode = document.getElementById("dark-mode")
+const darkMode = document.getElementById("toggle")
 
 darkMode.onclick = function(){
+  darkMode.classList.toggle("active")
   document.body.classList.toggle("dark-theme")
+
 }
 
 function handleClick(event) {
