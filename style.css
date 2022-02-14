@@ -137,7 +137,6 @@ h1{
 }
 
 #result{
-  box-sizing: content-box;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   color: var(--secondary-color);
