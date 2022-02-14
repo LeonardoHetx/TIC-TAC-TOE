@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
 *::selection{
   background: none;
@@ -109,7 +109,7 @@ h1{
   content: "O";
   color: var(--primary-color);
   font-size: 50px;
-  font-family: "Raleway", Geneva, Tahoma, sans-serif;
+  font-family: "Cabin", Geneva, Tahoma, sans-serif;
   line-height: 100px;
   top: 0;
   bottom: 0;
@@ -127,7 +127,7 @@ h1{
   content: "X";
   color: var(--primary-color);
   font-size: 50px;
-  font-family: "Raleway", Geneva, Tahoma, sans-serif;
+  font-family: "Cabin", Geneva, Tahoma, sans-serif;
   line-height: 100px;
   top: 0;
   bottom: 0;
@@ -135,3 +135,12 @@ h1{
   right: 0;
   transition: all 1s ease-in-out;
 }
+
+#result{
+  box-sizing: content-box;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: var(--secondary-color);
+
+}
+
