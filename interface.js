@@ -19,7 +19,9 @@ function handleClick(event) {
   let position = square.id
 
   if (handleMove(position)) {
-    setTimeout(() => { alert(`Jogador ${playerTime} venceu com a sequência ${seq[0]}-${seq[1]}-${seq[2]} !`) }, 10)
+    let result = document.getElementById("result")
+    setTimeout(() => { result.innerHTML = `Jogador "${symbols[playerTime].toUpperCase()}" venceu com a sequência ${seq[0]}-${seq[1]}-${seq[2]} !` }, 10)
+
   }
   updateSquare(position)
 }
@@ -37,6 +39,7 @@ function restart() {
   board = ["", "", "", "", "", "", "", "", ""]
   playerTime = 0
   gameOver = false
+  result.innerHTML = ""
   updateSquares()
 }
 
