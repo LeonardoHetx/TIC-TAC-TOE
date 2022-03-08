@@ -128,7 +128,7 @@ h1:hover{
 
 #restart:hover{
 
-  border: 2px solid var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   background-color: var(--primary-color);
   color: var(--secondary-color);
   transition: .4s;
@@ -136,7 +136,7 @@ h1:hover{
 
 #restart:active{
   transition: .05s;
-  border: 2px solid var(--primary-color);
+
 }
 
 .o{
