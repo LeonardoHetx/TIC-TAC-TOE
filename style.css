@@ -13,14 +13,14 @@ html {
   --primary-color: #E3E3E3;
   --secondary-color: #4E4E4D;
   --shadow-color: #bdbdbd;
-  --hover-color: #8f8f8f;
+  --hover-color: #777777;
 }
 
 .dark-theme{
   --primary-color: #4E4E4D;
   --secondary-color: #E3E3E3;
   --shadow-color: #383838;
-  --hover-color: #B0B0B0;
+  --hover-color: #9b9b9b;
 }
 
 body{
@@ -44,7 +44,7 @@ h1{
 }
 
 h1:hover{
-  letter-spacing: 15px;
+  letter-spacing: 10px;
 }
 
 #toggle{
@@ -94,6 +94,7 @@ h1:hover{
 }
 
 .square:hover{
+  transition: .5s;
   background-color: var(--hover-color);
 }
 
@@ -126,12 +127,15 @@ h1:hover{
 }
 
 #restart:hover{
-  box-shadow: 0px 0px 9px 1px var(--secondary-color);
+
+  border: 2px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   transition: .4s;
 }
 
 #restart:active{
-  transition: none;
+  transition: .05s;
   border: 2px solid var(--primary-color);
 }
 
