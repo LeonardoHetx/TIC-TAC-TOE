@@ -8,28 +8,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const darkMode = document.getElementById("toggle")
 
-darkMode.onclick = function(){
+darkMode.onclick = function () {
   darkMode.classList.toggle("active")
   document.body.classList.toggle("dark-theme")
-
 }
 
 function handleClick(event) {
   let square = event.target
   let position = square.id
 
-  if (handleMove(position)) {
+  if (handleMove(position) == true) {
     let result = document.getElementById("result")
-    setTimeout(() => { result.innerHTML = `Jogador "${symbols[playerTime].toUpperCase()}" venceu com a sequência ${seq[0]}-${seq[1]}-${seq[2]} !` }, 10)
-
+    setTimeout(() => { result.innerHTML = `Jogador "${symbols[playerTime].toUpperCase()}" venceu com a sequência ${seq[0]}-${seq[1]}-${seq[2]} !`
+    playerTime = (playerTime == 0 ? 1 : 0) }, 10)
+  } else if (!gameOver && countTurn === 9) {
+    let result = document.getElementById("result")
+    setTimeout(() => { result.innerHTML = `Houve um empate !` }, 10)
   }
   updateSquare(position)
 }
+
+turn.innerHTML = `TURN: ${symbols[playerTime].toUpperCase()}`
 
 function updateSquare(position) {
   let square = document.getElementById(position.toString())
   let symbol = board[position]
   square.innerHTML = `<div class='${symbol}'></div>`
+  let turn = document.getElementById("turn")
+  setTimeout(()=>{ turn.innerHTML = `TURN: ${symbols[playerTime].toUpperCase()}` },10)
 }
 
 button = document.getElementById("restart")
@@ -37,10 +43,11 @@ button.addEventListener("click", restart)
 
 function restart() {
   board = ["", "", "", "", "", "", "", "", ""]
-  playerTime = 0
   gameOver = false
   result.innerHTML = ""
+  countTurn = 0
   updateSquares()
+
 }
 
 function updateSquares() {
