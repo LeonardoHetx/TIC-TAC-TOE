@@ -111,7 +111,7 @@ h1:hover{
 }
 
 #turn:hover{
-  font-size: 4vw;
+  font-size: 3.5vw;
 }
 
 .square{
@@ -221,7 +221,7 @@ h1:hover{
 
 @media screen and (min-width: 900px) {
   #turn{
-  width: 11vw;
+  width: 13vw;
   height: 35px;
   line-height: 35px;
   font-size: 2vw;
@@ -230,5 +230,43 @@ h1:hover{
   #turn:hover{
     font-size: 2.5vw;
   }
+}
 
+  @media screen and (max-width: 470px){
+  #turn{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5px;
+    border-radius: 5px 5px 5px 5px;
+    width: 16vw;
+    height: 20px;
+   line-height: 20px;
+   font-size: 3vw;
+  }
+
+  #toggle{
+    top: 55%;
+    left: 70vw;
+  }
+
+  .square{
+    width: 60px;
+    height: 60px;
+  }
+
+  .o:after, .x:after{
+    font-size: 35px;
+  }
+
+}
+
+@media screen and (max-width: 245px){
+  #toggle{
+    top: 52%;
+    left: 75vw;
+  }
+
+  h1{
+    font-size: 25px;
+  }
 }
