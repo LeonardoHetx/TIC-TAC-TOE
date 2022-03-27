@@ -22,7 +22,7 @@ function handleClick(event) {
   if (handleMove(position) == true) {
     let result = document.getElementById("result")
     setTimeout(() => {
-      result.innerHTML = `Jogador "${symbols[playerTime].toUpperCase()}" venceu com a sequência ${seq[0]}-${seq[1]}-${seq[2]} !`
+      result.innerHTML = `Jogador "${symbols[playerTime].toUpperCase()}" venceu com a sequência ${seq[0]}-${seq[1]}-${seq[2]}`
       playerTime = (playerTime == 0 ? 1 : 0)
     }, 10)
   } else if (!gameOver && countTurn === 9) {
