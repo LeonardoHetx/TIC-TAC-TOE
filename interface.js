@@ -27,7 +27,7 @@ function handleClick(event) {
     }, 10)
   } else if (!gameOver && countTurn === 9) {
     let result = document.getElementById("result")
-    setTimeout(() => { result.innerHTML = `Houve um empate !` }, 10)
+    setTimeout(() => { result.innerHTML = `Houve um empate!` }, 10)
     drawTheme()
   }
   updateSquare(position)
