@@ -256,6 +256,7 @@ h1:hover{
 
   .x:after, .o:after{
     font-size: 35px;
+    line-height: 175%
   }
 
 }
