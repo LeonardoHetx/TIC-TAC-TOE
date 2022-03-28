@@ -245,7 +245,7 @@ h1:hover{
   }
 
   #toggle{
-    top: 55%;
+    top: 335px;
     left: 70vw;
   }
 
@@ -260,9 +260,13 @@ h1:hover{
 
 }
 
+  p{
+    font-size: 13px;
+  }
+
 @media screen and (max-width: 245px){
   #toggle{
-    top: 52%;
+    top: 320px;
     left: 75vw;
   }
 
