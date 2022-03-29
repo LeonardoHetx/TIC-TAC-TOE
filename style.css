@@ -25,7 +25,6 @@ html {
 
 .draw-theme .square{
   outline: 4px solid  rgb(73, 73, 73);
-
 }
 
 body{
@@ -123,7 +122,6 @@ h1:hover{
   box-shadow: 15px 15px 15px 4px var(--shadow-color);
   transition: 0.5s;
   cursor: pointer;
-  
 }
 
 .square:hover{
@@ -160,7 +158,6 @@ h1:hover{
 }
 
 #restart:hover{
-
   border: 1px solid var(--secondary-color);
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -169,7 +166,6 @@ h1:hover{
 
 #restart:active{
   transition: .05s;
-
 }
 
 .o{
@@ -216,7 +212,6 @@ h1:hover{
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   color: var(--secondary-color);
-
 }
 
 @media screen and (min-width: 900px) {
@@ -262,7 +257,6 @@ h1:hover{
   #result{
     font-size: 13px;
   }
-
 }
 
 @media screen and (max-width: 245px){
