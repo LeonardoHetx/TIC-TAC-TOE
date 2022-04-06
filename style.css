@@ -107,6 +107,7 @@ h1:hover{
   border-radius: 0px 0px 20px 0px;
   transition: .5s;
   transform: translateY(3%);
+  cursor: pointer;
 }
 
 #turn:hover{
