@@ -4,6 +4,11 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+*::selection{
+  background: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 :root{
   --primary-color: #E3E3E3;
   --secondary-color: #4E4E4D;
