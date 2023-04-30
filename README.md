@@ -3,6 +3,8 @@
 ## Jogo da Velha
 Este é um jogo da velha simples construído usando HTML, CSS e JavaScript.
 
+![GIF 4-30-2023 5-13-12 PM](https://user-images.githubusercontent.com/82117002/235374374-797c23a9-a0a7-4b0d-8bbb-b4d4c883cf6f.gif)
+
 ## Como jogar
 Acesse através do link https://leonardohetx.github.io/TIC-TAC-TOE/. <br>
 O jogo começará automaticamente. <br>
