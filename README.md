@@ -1,6 +1,6 @@
 <div align="center">
 <img src="https://user-images.githubusercontent.com/82117002/235463365-acefa241-6a61-4945-88a1-5245783d7b0b.svg">
-<img width="40%" src="https://user-images.githubusercontent.com/82117002/235374711-1ad554a2-b87b-41ef-89b9-f801b34ebb7a.gif">
+<img width="50%" src="https://user-images.githubusercontent.com/82117002/235374711-1ad554a2-b87b-41ef-89b9-f801b34ebb7a.gif">
 </div>
 
 # 🕹 Jogo da Velha
